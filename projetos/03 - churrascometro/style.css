@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    overflow-y: hidden;
+    
+}
+
+.conteiner-s{
+    display: flex;
+    max-width: 2200px;
+    margin: auto;
+    height: 100vh;
+
+}
+
+.principal{
+    flex: 2;
+    padding: 30px 90px 0px 40px;
+    box-sizing: border-box;
+    
+    
+}
+
+.principal img{
+    display: block;
+    width: 70%;
+    min-width: 280px;    
+}
+
+.principal h1{
+    font-size: 4vw;
+    position: relative;
+    animation: chargeColor 1s    alternate;
+    animation-iteration-count: 3;
+    
+}
+
+@keyframes chargeColor{
+    0%{color: black;top: 0px;} 
+    50% {color: aqua; top: -6px;} 
+    100%{color: black;top: 0px;}
+
+
+}
+
+
+
+.menu-conteiner{
+     flex: 1; 
+    background-color: aqua;
+    border-radius: 20px 0 0 20px;
+    text-align: center;
+    width: 20vw;
+
+}
+
+.menu-conteiner input{
+    width: 70%;
+    text-align: center;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    padding: 12px 0;
+    border: none;
+}
+
+.menu-conteiner button{
+    padding: 15px 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: none;
+    color: white;
+    background-color: rgb(18, 200, 200);
+    cursor: pointer;
+}
+
+.menu-conteiner button:hover{
+    background-color: rgba(255, 255, 255, 0.714);
+    transition: 0.38s ease-in;
+    color: black;
+}
+
+
+
+.menu-conteiner img{
+    display: block;
+    margin: auto;
+    width: 250px;
+    margin-top: 30px;
+}
+
+.menu-conteiner h5{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+
+.resultados{
+   background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 70%;
+    border-radius: 8px;
+    padding: 12px 12px;
+    border: none;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    display: none;
+    
+    
+}
+
+.fa-solid {
+    font-size: 20px;
+
+
+}
+
+
+
+
+
+
+
+
+ @media(max-width:878px){
+    .conteiner-s{
+        flex-direction: column;
+    }
+    .menu-conteiner{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .principal{
+        text-align: center;
+        margin-bottom:20px;
+    }
+    
+    .principal img{
+        margin: auto;
+    }
+    body{
+        overflow-y: auto;
+    }
+
+}
+ 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/03 - churrascometro/img/icons8-cerveja-100.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Churrascometro</title>
+</head>
+<body>
+    <section>
+        <div class="conteiner-s">
+            <div class="principal">
+                <h1>Saiba quanta comida e<br> bebida vai precisar!</h1>
+                 <img src="img/Barbecue-bro.svg" class="vanila-tilt"> 
+            </div>
+
+            <div class="menu-conteiner">
+                <img src="img/banner-churrascometro-v3.png">
+
+                <h5>Quantidade de adutos</h5>
+                <input id="adutos" name="adutos" type="number" placeholder="Adutos">
+
+                <h5>Quantidade de crianças</h5>
+                <input id="criancas" name="criancas" type="number" placeholder="Crianças">
+
+                <h5>Duração do Churrasco</h5>
+                <input id="duracao" name="duracao" type="number" placeholder="Duração"><br>
+
+                <button onclick="cal()">Calcular</button>
+
+                <div id="resultado-carne" class="resultados">
+                   
+                </div>
+
+                <div id="resultado-cerveja" class="resultados">
+                    
+                </div>
+
+                <div id="resultado-bebidas" class="resultados">
+                    
+                </div>
+        </div>
+    </section>
+
+    
+    <script src="/img/vanilla-tilt.min - cópia.js"></script> 
+    <script type="text/javascript">    
+        VanillaTilt.init(document.querySelector(".vanila-tilt"), {
+                        max: 25,            
+                        speed: 400     });  
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
