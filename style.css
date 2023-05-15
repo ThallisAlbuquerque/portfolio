@@ -360,9 +360,7 @@ i.menu-h{
 
 .projetos img:hover{
     transform: scale(105%);
-    border-left: 5px solid rgba(101, 24, 180, 1)
-
-   
+    border-left: 5px solid rgba(101, 24, 180, 1)   
 }
 
 
